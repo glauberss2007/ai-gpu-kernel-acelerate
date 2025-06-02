@@ -1,36 +1,36 @@
 # ai-gpu-kernel-acelerate
 
-## GPU Acceleration with Custom Triton Kernels
+## Aceleração em GPU com Kernels Personalizados do Triton
 
-**Triton Custom Kernels** are user-defined CUDA-like functions written in Triton that allow developers to optimize specific computations beyond the built-in operations. These custom kernels are designed to run efficiently on NVIDIA GPUs and can be tailored for tasks such as matrix multiplication, convolution, or other operations, providing greater control over performance.
+**Kernels Personalizados do Triton** são funções semelhantes ao CUDA definidas pelo usuário, escritas em Triton, que permitem aos desenvolvedores otimizar cálculos específicos além das operações padrão. Esses kernels personalizados são projetados para rodar de forma eficiente em GPUs NVIDIA e podem ser adaptados para tarefas como multiplicação de matrizes, convoluções ou outras operações, proporcionando maior controle sobre o desempenho.
 
-**Key features of Triton custom kernels include:**
-- Easy-to-write and understand code, resembling Python.
-- High performance comparable to hand-optimized CUDA kernels.
-- Flexibility to customize for specific hardware and workload needs.
-- Simplified development process compared to traditional CUDA programming.
+**Principais características dos kernels personalizados do Triton incluem:**
+- Código fácil de escrever e entender, semelhante ao Python.
+- Alto desempenho comparável a kernels CUDA otimizados manualmente.
+- Flexibilidade para personalização de acordo com as necessidades específicas de hardware e carga de trabalho.
+- Processo de desenvolvimento simplificado em comparação com a programação CUDA tradicional.
 
-## High-Performance Fused Softmax Implementation Pytorch
+## Implementação de Softmax Fundido de Alto Desempenho em PyTorch
 
-The softmax function is used in machine learning to convert a vector of raw scores (logits) into probabilities that sum to 1. It is commonly used in classification tasks, especially in the output layer of neural networks for multiclass classification.
+A função softmax é usada em aprendizado de máquina para converter um vetor de pontuações brutas (logits) em probabilidades que somam 1. É comumente usada em tarefas de classificação, especialmente na camada de saída de redes neurais para classificação multiclasse.
 
-### Definition:
+### Definição:
 
-Given a vector of scores \(\mathbf{z} = [z_1, z_2, \ldots, z_K]\), the softmax function outputs a probability distribution across \(K\) classes:
+Dado um vetor de pontuações \(\mathbf{z} = [z_1, z_2, \ldots, z_K]\), a função softmax gera uma distribuição de probabilidade entre \(K\) classes:
 
 \[
 \sigma(\mathbf{z})_i = \frac{e^{z_i}}{\sum_{j=1}^{K} e^{z_j}}
 \]
 
-### Characteristics:
+### Características:
 
-- **Probability Distribution:** The softmax output can be interpreted as the probability of each class. All probabilities sum up to 1.
-- **Exponential Scaling:** Enhances the differences between scores, making the larger scores even more dominant.
-- **Differentiable:** Suitable for gradient-based optimization.
+- **Distribuição de Probabilidade:** A saída do softmax pode ser interpretada como a probabilidade de cada classe. Todas as probabilidades somam 1.
+- **Escalonamento Exponencial:** Aumenta as diferenças entre as pontuações, tornando as pontuações maiores ainda mais dominantes.
+- **Diferenciável:** Adequada para otimização baseada em gradientes.
 
-### Applications:
+### Aplicações:
 
-- **Multiclass Classification:** Maps scores to a probability distribution over classes in the output layer of neural networks.
-- **Reinforcement Learning:** Used in policy gradients to model probabilities of actions.
+- **Classificação Multiclasse:** Mapeia pontuações para uma distribuição de probabilidade sobre as classes na camada de saída de redes neurais.
+- **Aprendizado por Reforço:** Usada em gradientes de política para modelar probabilidades de ações.
 
-## 
+## Referências
