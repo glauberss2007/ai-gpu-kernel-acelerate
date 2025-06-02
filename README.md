@@ -34,3 +34,5 @@ Dado um vetor de pontuações \(\mathbf{z} = [z_1, z_2, \ldots, z_K]\), a funç�
 - **Aprendizado por Reforço:** Usada em gradientes de política para modelar probabilidades de ações.
 
 ## Referências
+
+Machine Learning Warrrior trainer 
